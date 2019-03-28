@@ -247,4 +247,11 @@
      <string name="bluetooth_timeout_summary_2hours">2 hours</string>
      <string name="bluetooth_timeout_summary_4hours">4 hours</string>
      <string name="bluetooth_timeout_summary_8hours">8 hours</string>
+
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Smart Charging</string>
+    <string name="smart_charging_summary">Set maximum charging level</string>
+    <string name="smart_charging_switch_title">Use Smart charging</string>
+    <string name="smart_charging_level_title">Trigger level</string>
+
 </resources>
