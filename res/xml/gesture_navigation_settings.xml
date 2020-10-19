@@ -59,5 +59,12 @@
         android:selectable="false"
         settings:searchable="false"
         settings:allowDividerAbove="true"/>
+
+    <com.dotfe.support.preferences.SystemSettingSwitchPreference
+        android:key="back_gesture_haptic"
+        android:title="@string/back_gesture_haptic_title"
+        android:summary="@string/back_gesture_haptic_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
 
