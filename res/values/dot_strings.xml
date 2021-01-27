@@ -386,4 +386,7 @@
     <string name="slider_aosp">Aosp</string>
     <string name="slider_rui">RUI</string>
     <string name="slider_a12">A12</string>
+
+    <string name="wifi_tether_client_list_title">Client List</string>
+    <string name="wifi_tether_client_list_summary">Manage clients connected to hotspot</string>
 </resources>
