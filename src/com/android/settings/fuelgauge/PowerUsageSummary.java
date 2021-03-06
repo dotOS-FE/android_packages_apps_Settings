@@ -253,7 +253,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
     }
-	
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
