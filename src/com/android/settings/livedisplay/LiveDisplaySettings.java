@@ -58,7 +58,7 @@ import com.android.settings.custom.utils.ResourceUtils;
 
 import com.android.settings.custom.preference.CustomDialogPreference;
 
-import com.dot.support.preferences.SystemSettingSwitchPreference;
+import com.dotfe.support.preferences.SystemSettingSwitchPreference;
 
 import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_ANTI_FLICKER;
 import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_CABC;

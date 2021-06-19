@@ -102,7 +102,7 @@
         android:title="@string/accessibility_screen_option" />
   
     <!-- Link ringtone and notification volumes -->
-    <com.dot.support.preferences.SecureSettingSwitchPreference
+    <com.dotfe.support.preferences.SecureSettingSwitchPreference
         android:key="volume_link_notification"
         android:layout="@layout/dot_preference_top_card"
         android:title="@string/volume_link_notification_title"
@@ -111,7 +111,7 @@
         settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
 
     <!-- Increasing ring -->
-    <com.dot.support.preferences.SystemSettingSwitchPreference
+    <com.dotfe.support.preferences.SystemSettingSwitchPreference
         android:key="increasing_ring"
         android:layout="@layout/dot_preference_middle_card"
         android:title="@string/increasing_ring_volume_option_title"
@@ -247,7 +247,7 @@
           android:summary="%s"/>
 
         <!-- In-call feedback -->
-        <com.dot.support.preferences.SystemSettingSwitchPreference
+        <com.dotfe.support.preferences.SystemSettingSwitchPreference
           android:key="incall_feeedback_vibrate"
           android:title="@string/incall_feeedback_vibrate_title"
           android:layout="@layout/dot_preference_middle_card"

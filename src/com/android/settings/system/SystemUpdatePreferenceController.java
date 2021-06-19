@@ -47,9 +47,9 @@ public class SystemUpdatePreferenceController extends BasePreferenceController {
 
     private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
 
-    private static final String OTA_PACKAGE = "com.dot.updater";
-    private static final String DOT_VERSION = "ro.modversion";
-    private static final String DOT_TYPE = "ro.dot.releasetype";
+    private static final String OTA_PACKAGE = "com.dotfe.updater";
+    private static final String DOTFE_VERSION = "ro.modversion";
+    private static final String DOTFE_TYPE = "ro.dotfe.releasetype";
 
     private final UserManager mUm;
     private final SystemUpdateManager mUpdateManager;
@@ -62,8 +62,8 @@ public class SystemUpdatePreferenceController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-        boolean isSupportedType = SystemProperties.get(DOT_TYPE).equalsIgnoreCase("OFFICIAL") || 
-                                  SystemProperties.get(DOT_TYPE).equalsIgnoreCase("GAPPS");
+        boolean isSupportedType = SystemProperties.get(DOTFE_TYPE).equalsIgnoreCase("OFFICIAL") || 
+                                  SystemProperties.get(DOTFE_TYPE).equalsIgnoreCase("GAPPS");
         try {
             mContext.getPackageManager().getPackageInfo(OTA_PACKAGE, PackageManager.GET_ACTIVITIES);
         } catch (Exception e) {
@@ -102,7 +102,7 @@ public class SystemUpdatePreferenceController extends BasePreferenceController {
     @Override
     public CharSequence getSummary() {
         CharSequence summary = mContext.getString(R.string.android_version_summary,
-                SystemProperties.get(DOT_VERSION));
+                SystemProperties.get(DOTFE_VERSION));
         final FutureTask<Bundle> bundleFutureTask = new FutureTask<>(
                 // Put the API call in a future to avoid StrictMode violation.
                 () -> mUpdateManager.retrieveSystemUpdateInfo());

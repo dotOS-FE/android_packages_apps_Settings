@@ -26,23 +26,23 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
-public class DotVersionPreferenceController extends BasePreferenceController {
+public class DotFEVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String DOT_VERSION_PROPERTY = "ro.dot.display.version";
+    static final String DOTFE_VERSION_PROPERTY = "ro.dotfe.display.version";
 
-    public DotVersionPreferenceController(Context context, String preferenceKey) {
+    public DotFEVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return !TextUtils.isEmpty(SystemProperties.get(DOT_VERSION_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return !TextUtils.isEmpty(SystemProperties.get(DOTFE_VERSION_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(DOT_VERSION_PROPERTY,
+        return SystemProperties.get(DOTFE_VERSION_PROPERTY,
                 mContext.getString(R.string.device_info_default));
     }
 }

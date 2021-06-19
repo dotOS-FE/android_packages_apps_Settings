@@ -34,14 +34,14 @@
         android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
 
-    <!-- Dot version -->
+    <!-- Dot Fan Edition version -->
     <Preference
          android:key="dot_version"
          android:title="@string/dot_version"
          android:summary="@string/summary_placeholder"
          settings:enableCopying="true"
          android:selectable="false"
-         settings:controller="com.android.settings.deviceinfo.firmwareversion.DotVersionPreferenceController"/>
+         settings:controller="com.android.settings.deviceinfo.firmwareversion.DotFEVersionPreferenceController"/>
 
     <!-- Android version -->
     <Preference
