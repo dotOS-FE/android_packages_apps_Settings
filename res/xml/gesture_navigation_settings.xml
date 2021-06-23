@@ -66,5 +66,11 @@
         android:summary="@string/back_gesture_haptic_summary"
         android:defaultValue="false" />
 
+    <com.dotfe.support.preferences.SystemSettingSwitchPreference
+        android:key="edge_music_control"
+        android:title="@string/edge_music_title"
+        android:summary="@string/edge_music_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
 
