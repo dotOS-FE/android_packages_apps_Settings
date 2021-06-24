@@ -21,11 +21,9 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-<PreferenceScreen
-    android:layout="@layout/dot_logo"
-    android:key="dot_logo" />
-
     <!-- Device name -->
+
+    <!-- Android version -->
     <Preference
         android:key="about_device_name"
         android:title="@string/about_device_name"
