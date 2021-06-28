@@ -79,6 +79,7 @@
 
     <string name="dot_about_device_info">Legal &amp; Information</string>
     <string name="dot_about_device_private">Private Details</string>
+    <string name="dot_about_device_misc">Misc</string>
 
     <string name="dot_lightMode">Light Theme</string>
     <string name="dot_darkMode">Dark Theme</string>

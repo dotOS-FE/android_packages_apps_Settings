@@ -207,6 +207,11 @@
         android:title="@string/status_bt_address"
         settings:enableCopying="true" />
 
+    <PreferenceCategory
+        android:layout="@layout/dot_preference_category"
+        android:order="28"
+        android:title="@string/dot_about_device_misc" />
+
     <!-- Device up time -->
     <Preference
         android:key="up_time"
