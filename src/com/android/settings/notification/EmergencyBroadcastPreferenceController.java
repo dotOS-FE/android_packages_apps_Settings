@@ -23,6 +23,9 @@ import android.os.UserManager;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+
+import com.android.settings.R;
 
 import com.android.internal.telephony.CellBroadcastUtils;
 import com.android.settings.accounts.AccountRestrictionHelper;
@@ -55,6 +58,13 @@ public class EmergencyBroadcastPreferenceController extends AbstractPreferenceCo
         mHelper = helper;
         mUserManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
         mPm = mContext.getPackageManager();
+    }
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+         super.displayPreference(screen);
+         Preference preference = screen.findPreference(getPreferenceKey());
+         preference.setLayoutResource(R.layout.dot_preference_middle_card);
     }
 
     @Override

@@ -48,6 +48,7 @@
 
     <Preference
         android:key="conversations"
+	android:layout="@layout/dot_preference_top_card"
         android:title="@string/conversations_category_title"
         android:order="-550"
         settings:controller="com.android.settings.notification.ConversationListSummaryPreferenceController"
@@ -56,6 +57,7 @@
 
     <Preference
         android:key="configure_notification_settings"
+	android:layout="@layout/dot_preference_middle_card"
         android:title="@string/configure_notification_settings"
         android:summary="@string/notification_screen_summary"
         android:order="-440"
@@ -68,6 +70,7 @@
 
     <Preference
         android:key="default_apps"
+	android:layout="@layout/dot_preference_middle_card"
         android:title="@string/app_default_dashboard_title"
         android:order="11"
         settings:controller="com.android.settings.applications.DefaultAppsPreferenceController">
@@ -76,6 +79,7 @@
 
     <Preference
         android:key="manage_perms"
+	android:layout="@layout/dot_preference_middle_card"
         android:title="@string/app_permissions"
         android:summary="@string/runtime_permissions_summary_control_app_access"
         android:order="12"
@@ -86,6 +90,7 @@
     <com.android.settingslib.RestrictedPreference
         android:key="app_and_notif_cell_broadcast_settings"
         android:title="@string/cell_broadcast_settings"
+	android:layout="@layout/dot_preference_middle_card"
         android:order="15"
         settings:useAdminDisabledSummary="true">
         <intent
@@ -96,6 +101,7 @@
 
     <Preference
         android:key="special_access"
+	android:layout="@layout/dot_preference_bottom_card"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"
         android:order="20"
