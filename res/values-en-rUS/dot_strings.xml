@@ -16,9 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, dot OS version -->
-    <string name="dot_version">dotOS version</string>
+    <string name="dot_version">dotOS Fan Edition version</string>
     <string name="dot_version_default">Unknown</string>
-    <string name="keywords_dot_version">dotOS version, dot version</string>
+    <string name="keywords_dot_version">dotOS Fan Edition version, dotfe version</string>
     <!-- About phone screen, build date -->
     <string name="about_device_name">Device Codename</string>
     <string name="build_date">Build date</string>
@@ -53,7 +53,7 @@
     <!-- About phone cards -->
     <string name="storage_card_title">Storage</string>
     <string name="storage_card_info">Occupied</string>
-    <string name="about_device_rom_title">DotOS %s</string>
+    <string name="about_device_rom_title">dotOS FE %s</string>
     <string name="about_device_nearby">The device name can and will be seen by the nearby devices.</string>
     <!-- BatteryInfo Cards -->
     <string name="binfo_stats">Stats</string>
