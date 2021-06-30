@@ -27,6 +27,7 @@
 
     <SwitchPreference
         android:key="auto_sync_account_data"
+	android:layout="@layout/dot_preference_full_alone_card"
         android:title="@string/auto_sync_account_title"
         android:summary="@string/auto_sync_account_summary"
         android:order="102"
@@ -34,6 +35,7 @@
 
     <SwitchPreference
         android:key="auto_sync_work_account_data"
+	android:layout="@layout/dot_preference_top_card"
         android:title="@string/account_settings_menu_auto_sync_work"
         android:summary="@string/auto_sync_account_summary"
         settings:forWork="true"
@@ -41,6 +43,7 @@
 
     <SwitchPreference
         android:key="auto_sync_personal_account_data"
+	android:layout="@layout/dot_preference_bottom_card"
         android:title="@string/account_settings_menu_auto_sync_personal"
         android:summary="@string/auto_sync_account_summary"
         android:order="104"/>
