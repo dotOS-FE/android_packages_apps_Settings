@@ -42,7 +42,7 @@
             app:keywords="@string/keywords_face_unlock"
             app:controller="com.android.settings.biometrics.face.FaceSettingsAppPreferenceController"/>
 
-        <com.android.settings.custom.preference.SecureSettingListPreference
+        <com.dotfe.support.preferences.SecureSettingListPreference
             android:key="face_unlock_method"
             android:title="@string/face_unlock_method_title"
             android:summary="%s"
