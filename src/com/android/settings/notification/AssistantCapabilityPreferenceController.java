@@ -19,6 +19,11 @@ package com.android.settings.notification;
 import android.content.Context;
 import android.service.notification.Adjustment;
 
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+
+import com.android.settings.R;
+
 import com.android.settings.core.TogglePreferenceController;
 
 import com.google.common.annotations.VisibleForTesting;
@@ -40,6 +45,13 @@ public class AssistantCapabilityPreferenceController extends TogglePreferenceCon
     @VisibleForTesting
     void setBackend(NotificationBackend backend) {
         mBackend = backend;
+    }
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+         super.displayPreference(screen);
+         Preference preference = screen.findPreference(getPreferenceKey());
+         preference.setLayoutResource(R.layout.dot_preference_middle_card);
     }
 
     @Override
