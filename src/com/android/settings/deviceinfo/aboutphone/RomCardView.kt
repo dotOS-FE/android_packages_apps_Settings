@@ -1,8 +1,10 @@
 package com.android.settings.deviceinfo.aboutphone
 
 import android.content.Context
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.SystemProperties
+import android.provider.Settings
 import android.util.AttributeSet
 import android.view.Gravity
 import android.widget.ImageView
@@ -83,5 +85,8 @@ class RomCardView(context: Context, attrs: AttributeSet?) : AboutBaseCard(contex
         linearLayout.setBackgroundColor(resources.getColor(R.color.search_bar_background, null))
         layout.addView(rom_logo, rlparams)
         layout.addView(linearLayout, lparamas)
+	layout.setOnClickListener {
+            context.startActivity(Intent(Settings.ACTION_SYSTEM_UPDATE_SETTINGS))
+        }
     }
 }
