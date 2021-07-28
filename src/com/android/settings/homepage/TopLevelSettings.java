@@ -85,8 +85,10 @@ public class TopLevelSettings extends DashboardFragment implements
         super.onCreatePreferences(savedInstanceState, rootKey);
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             Preference pref = getPreferenceScreen().getPreference(i);
-            if (pref.isVisible() && pref.getTitle() != null && pref.getLayoutResource() != R.layout.dot_preference_dashboard) {
-                pref.setLayoutResource(R.layout.dot_preference_dashboard);
+            if (pref.isVisible() && pref.getTitle() != null &&
+		pref.getLayoutResource() != R.layout.dot_preference_dashboard &&
+                pref.getLayoutResource() != R.layout.card_preference_layout_bm) {
+                pref.setLayoutResource(R.layout.card_preference_layout_bm);
             }
         }
     }

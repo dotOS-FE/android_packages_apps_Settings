@@ -23,6 +23,7 @@
 
     <Preference
         android:order="-200"
+	settings:layout="@layout/dot_preference_dashboard"
         android:selectable="false"
         android:title="@string/top_level_connectivity"
         settings:shouldDisableView="false"
@@ -35,7 +36,7 @@
         android:order="-190"
         android:summary="@string/summary_placeholder"
         android:title="@string/network_dashboard_title"
-        settings:layout="@layout/dot_preference_dashboard"
+        settings:layout="@layout/card_preference_layout_bm"
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController" />
 
     <Preference
@@ -49,6 +50,7 @@
 
     <Preference
         android:order="-170"
+	settings:layout="@layout/dot_preference_dashboard"
         android:selectable="false"
         android:title="@string/top_level_personalize"
         settings:shouldDisableView="false"
@@ -60,7 +62,7 @@
         android:order="-160"
         android:summary="@string/dot_customizer_dashboard_summary"
         android:title="@string/dot_customizer_dashboard_title"
-        settings:layout="@layout/dot_preference_dashboard">
+        settings:layout="@layout/card_preference_layout_bm">
         <intent
             android:action="android.intent.action.VIEW"
             android:targetClass="com.android.settings.dotextras.BaseActivity"
@@ -83,7 +85,7 @@
         android:order="-108"
         android:summary="@string/sound_dashboard_summary"
         android:title="@string/sound_settings"
-        settings:layout="@layout/dot_preference_dashboard" />
+        settings:layout="@layout/card_preference_layout_bm" />
 
     <Preference
         android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
@@ -104,6 +106,7 @@
 
     <Preference
         android:order="-100"
+	settings:layout="@layout/dot_preference_dashboard"
         android:selectable="false"
         android:title="@string/top_level_security"
         settings:shouldDisableView="false"
@@ -124,7 +127,7 @@
         android:order="-98"
         android:summary="@string/summary_placeholder"
         android:title="@string/security_settings_title"
-        settings:layout="@layout/dot_preference_dashboard"
+        settings:layout="@layout/card_preference_layout_bm"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController" />
 
     <Preference
@@ -143,11 +146,12 @@
         android:order="-96"
         android:summary="@string/summary_placeholder"
         android:title="@string/account_dashboard_title"
-        settings:layout="@layout/dot_preference_dashboard"
+        settings:layout="@layout/card_preference_layout_bm"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController" />
 
     <Preference
         android:order="-90"
+	settings:layout="@layout/dot_preference_dashboard"
         android:selectable="false"
         android:title="@string/top_level_others"
         settings:shouldDisableView="false"
@@ -160,7 +164,7 @@
         android:order="-20"
         android:summary="@string/accessibility_settings_summary"
         android:title="@string/accessibility_settings"
-        settings:layout="@layout/dot_preference_dashboard"
+        settings:layout="@layout/card_preference_layout_bm"
         settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController" />
 
     <Preference
@@ -170,7 +174,7 @@
         android:order="-11"
         android:summary="@string/summary_placeholder"
         android:title="@string/storage_settings"
-        settings:layout="@layout/dot_preference_dashboard"
+        settings:layout="@layout/card_preference_layout_bm"
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController" />
 
     <Preference
@@ -196,7 +200,7 @@
         android:order="20"
         android:summary="@string/summary_placeholder"
         android:title="@string/about_settings"
-        settings:layout="@layout/dot_preference_dashboard"
+        settings:layout="@layout/card_preference_layout_bm"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController" />
 
 </PreferenceScreen>
