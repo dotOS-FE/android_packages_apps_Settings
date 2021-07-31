@@ -225,4 +225,16 @@
         android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
         settings:controller="com.android.settings.display.FontSizePreferenceController" />
 
+    <PreferenceCategory
+        android:layout="@layout/dot_preference_category"
+        android:title="@string/accessibility_screen_option" />
+
+    <com.dotfe.support.preferences.SystemSettingListPreference
+            android:key="systemui_plugin_volume"
+	    android:layout="@layout/dot_preference_full_alone_card"
+            android:title="@string/volume_panel"
+            android:entries="@array/volume_panel_entries"
+            android:entryValues="@array/volume_panel_values"
+            android:defaultValue="@string/volume_panel_stock_val" />
+
 </PreferenceScreen>

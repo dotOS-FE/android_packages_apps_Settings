@@ -306,4 +306,28 @@
     <string name="dc_dimming_off_auto_mode_auto">Will turn on automatically</string>
     <string name="dc_dimming_on_auto_mode_auto">Will turn off automatically</string>
     <string name="keywords_display_dc_dimming">dc dimming, flicker, eye, strain</string>
+
+    <!-- Styles -->
+    <string name="styles_title">Styles</string>
+
+    <!--  Volume Panel Plugin   -->
+   <string name="volume_panel">Volume Panel Style</string>
+   <string name="volume_panel_stock">Stock</string>
+   <string name="volume_panel_aosp">AOSP</string>
+   <string name="volume_panel_compact">Compact</string>
+   <string name="volume_panel_oreo">Oreo</string>
+   <string name="volume_panel_tiled">Tiled</string>
+   <string name="volume_panel_miui">MIUI</string>
+   <string name="volume_panel_p404">P404</string>
+    <string name="volume_panel_ssos">ShapeShift</string>
+
+   <!--  Volume Panel Plugin Values   -->
+   <string name="volume_panel_stock_val">com.android.systemui.volume</string>
+   <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
+    <string name="volume_panel_miui_val">com.cherish.plugin.volume.miui</string>
+   <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
+   <string name="volume_panel_oreo_val">co.potatoproject.plugin.volume.oreo</string>
+   <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+   <string name="volume_panel_p404_val">co.potatoproject.plugin.volume.p404</string>
+   <string name="volume_panel_ssos_val">co.potatoproject.plugin.volume.ssos</string>
 </resources>
