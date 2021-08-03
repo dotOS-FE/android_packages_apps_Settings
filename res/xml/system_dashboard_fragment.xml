@@ -37,6 +37,15 @@
         android:fragment="com.android.settings.gestures.GestureSettings"
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
 
+    <com.android.settings.widget.MasterSwitchPreference
+        android:key="gaming_mode_enabled"
+	android:icon="@drawable/ic_gaming"
+	android:order="-245"
+        android:summary="@string/gaming_mode_summary"
+        android:fragment="com.android.settings.system.GamingMode" 
+        android:title="@string/gaming_mode_title" 
+	android:defaultValue="false" />
+
     <Preference
         android:key="date_time_settings"
         android:title="@string/date_and_time"

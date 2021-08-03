@@ -19,11 +19,15 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.*;
+
+import com.android.settings.widget.MasterSwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
@@ -36,7 +40,13 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class SystemDashboardFragment extends DashboardFragment {
+public class SystemDashboardFragment extends DashboardFragment
+	implements Preference.OnPreferenceChangeListener {
+
+
+    private static final String GAMING_MODE_ENABLED = "gaming_mode_enabled";
+
+    private MasterSwitchPreference mGamingMode;
 
     private static final String TAG = "SystemDashboardFrag";
 
@@ -55,6 +65,23 @@ public class SystemDashboardFragment extends DashboardFragment {
         }
 
         showRestrictionDialog();
+
+	mGamingMode = (MasterSwitchPreference) findPreference(GAMING_MODE_ENABLED);
+        mGamingMode.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.GAMING_MODE_ENABLED, 0) == 1));
+        mGamingMode.setOnPreferenceChangeListener(this);        
+    }
+
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+		if (preference == mGamingMode) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.GAMING_MODE_ENABLED, value ? 1 : 0);
+            return true;
+        }
+        return false;
     }
 
     @VisibleForTesting
