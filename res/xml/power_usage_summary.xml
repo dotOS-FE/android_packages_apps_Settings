@@ -71,6 +71,13 @@
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
 
     <Preference
+        android:key="aggressive_battery"
+        android:title="@string/aggressive_battery_title"
+	android:layout="@layout/card_preference_layout_bm"
+        android:summary="@string/aggressive_battery_summary"
+        android:fragment="com.android.settings.fuelgauge.AggressiveBattery" />
+
+    <Preference
         android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"
         android:key="smart_charging_key"
         android:title="@string/smart_charging_title"
