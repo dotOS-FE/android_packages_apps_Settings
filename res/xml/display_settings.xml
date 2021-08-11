@@ -237,4 +237,12 @@
             android:entryValues="@array/volume_panel_values"
             android:defaultValue="@string/volume_panel_stock_val" />
 
+    <com.dotfe.support.preferences.SystemSettingListPreference
+            android:key="slider_style"
+            android:layout="@layout/dot_preference_full_alone_card"
+            android:title="@string/slider_styles_title"
+            android:entries="@array/slider_styles_entries"
+            android:entryValues="@array/slider_styles_values"
+            android:defaultValue="0" />
+
 </PreferenceScreen>

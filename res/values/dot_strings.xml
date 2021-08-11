@@ -378,4 +378,12 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
+
+        <!-- Slider Styles -->
+    <string name="slider_styles_title">Brightness Slider Styles</string>
+    <string name="slider_default">Default</string>
+    <string name="slider_oos">OOS</string>
+    <string name="slider_aosp">Aosp</string>
+    <string name="slider_rui">RUI</string>
+    <string name="slider_a12">A12</string>
 </resources>
